@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form method="POST" action="ex3_validate_form.html">
+            <label for="id_name">Name:</label>
+            <input type=text name="name" id="id_name" required>
+
+            <br>
+            <label for="id_age">Age:</label>
+            <input type="radio" name="age" id="id_age" required>&lt18
+            <input type="radio" name="age" id="id_age" required>19-35
+            <input type="radio" name="age" id="id_age" required>36-48
+            <input type="radio" name="age" id="id_age" required>&gt49
+
+            <br>
+            <label for="id_profession">Profession:</label>
+            <input type="text" name="profession" id="id_profession">
+
+            <br>
+            <label for="id_country">Country:</label>
+            <select name="country" id="id_country">
+                <optgroup label="Europe">
+                    <option value="portugal">Portugal</option>
+                    <option value="espanha">Espanha</option>
+                    <option value="italia">Itália</option>
+                    <option value="alemanha">Alemanha</option>
+                    <option value="suiça">Suiça</option>
+                    <option value="dinamarca">Dinamarca</option>
+                    <option value="noruega">Noruega</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option value="china">China</option>
+                    <option value="russia">Russia</option>
+                    <option value="japao">Japão</option>
+                    <option value="india">Índia</option>
+                    <option value="indonesia">Indonésia</option>
+                </optgroup>
+                <optgroup label="America">
+                    <option value="usa">USA</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="mexico">México</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="paraguai">Paraguai</option>
+                    <option value="chile">Chile</option>
+                    <option value="peru">Perú</option>
+                </optgroup>
+            </select>  
+            
+            <br>
+            <label for="id_interests">Interests:</label>
+            <input type="checkbox" name="interests" value="makeup" id="id_interests">Makeup
+            <input type="checkbox" name="interests" value="games" id="id_interests">Games
+            <input type="checkbox" name="interests" value="code" id="id_interests">Code
+            <input type="checkbox" name="interests" value="sports" id="id_interests">Sports
+            <input type="checkbox" name="interests" value="theatre" id="id_interests">Theatre
+            <input type="checkbox" name="interests" value="music" id="id_interests">Music
+
+            <br>
+            <textarea name="description" rows="4" cols="40" placeholder="How did you find out about the page?"></textarea>
+
+            <br>
+            <input type="submit" value="Submit!">
+
+
+        </form>
+    </body>
+
+</html>
