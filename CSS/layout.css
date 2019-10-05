@@ -1,0 +1,56 @@
+body {
+    width: 60em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 60px auto 50px;
+}
+
+#main_header  {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row: 1;
+}
+
+#menu {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row:2;
+}
+
+#menu ul {
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#signup {
+    text-align: right;
+}
+
+
+aside #related{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    
+    
+}
+
+section #news{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+}
+
+
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 5;
+}
+
