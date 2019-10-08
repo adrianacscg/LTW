@@ -1,8 +1,5 @@
 @media (max-width: 30em) {
-    nav #menu ul{
-        display: none;
-    }
-
+    
     #main_header h2 {
         display: none;
     }
@@ -10,51 +7,93 @@
         text-decoration: none;
         color: black;
         font-family: Verdana;
+        text-shadow: none;
         
     }
-    aside #related {
+
+    article header {
+        position: relative;
+        padding: 15px;
+
+    }
+
+    #related {
         display: none;
     }
     
-    body{
-        grid-template-rows: 3;
-        grid-template-columns: 1;
-    }
-    section #news{
+    #news{
         width: 100%;
         grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 6;
     }
-    
-    #menu.hamburguer {
+
+    #news article header a {
+        display: block;
+        position: relative;
+    }
+     
+
+    #menu{
+        display: block;
+        background-color: #2a2f33;
+        color: white;
+        padding: 1em;
+        grid-column: span 5;
+    }
+
+    #menu .hamburguer{
         display: block;
         background-color: #2a2f33;
         color: white;
         padding: 1em;
     }
-    #menu.hamburguer::before{
-        content: '\2630';
+
+    #menu .hamburguer:before{
+        content: "\2630";
     }
     #menu ul{
+        display: none;
         flex-direction: column;
         margin: 0;
         padding: 0;
         color: white;
     }
-    #hamburguer:checked+.hamburguer + ul li{
+
+
+    #hamburguer:checked + .hamburguer + ul li{
+
         max-height: 1em;
         padding: 1em;
         opacity: 1;
+
     }
-    #hamburguer:checked+.hamburguer::before{
-        content: '\2715'
+    #hamburguer:checked+.hamburguer:before{
+        content: "\2715";
+    }
+    footer{
+        grid-row: 5;
+        grid-column-end: span 6;
     }
 }
 
 @media (max-width: 60em) {
-    aside #related {
+    #related {
         display: none;
+    }
+    #news{
+        width: 100%;
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+    #menu{
+        grid-column-end: span 6;
     }
     body {
         width: 100%;
+    }
+    footer{
+        grid-column-end: span 6;
     }
 }
