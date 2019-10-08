@@ -107,12 +107,14 @@
         padding: 1em;
     }
 
+
+
     #hamburger:checked + .hamburger + ul li{
 
         max-height: 1em;
         padding: 1em;
         opacity: 1;
-        background-color: white;
+        background-color: lightgray;
 
     }
     #hamburger:checked+.hamburger:before{
