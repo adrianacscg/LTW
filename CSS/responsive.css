@@ -33,7 +33,7 @@
         position: relative;
     }
      
-
+    /*
     #menu{
         display: block;
         background-color: #2a2f33;
@@ -41,34 +41,81 @@
         padding: 1em;
         grid-column: span 5;
     }
-
-    #menu .hamburguer{
+    */
+    #menu .hamburger{
         display: block;
         background-color: #2a2f33;
         color: white;
         padding: 1em;
     }
 
-    #menu .hamburguer:before{
+    #menu .hamburger:before{
         content: "\2630";
     }
     #menu ul{
-        display: none;
         flex-direction: column;
         margin: 0;
         padding: 0;
         color: white;
     }
 
+    #menu ul li{
+        opacity: 0;
+        text-align: left;
+        transition: all .3s ease-in-out;
+        z-index: 2;
+        border-top: 0;
+        
+    }
+    nav ul li:nth-child(1){
+        border-left: solid 5px;
+        border-left-color: #E1493E;
+        padding: 1em;
+        
+        
+        
+    }
+    
+    nav ul li:nth-child(2){
+        border-left: solid 5px;
+        border-left-color: #8ABA56;
+        padding: 1em;
+        
+    }
+    
+    nav ul li:nth-child(3){
+        border-left: solid 5px;
+        border-left-color: #5B4282;
+        padding: 1em;
+    }
+    
+    nav ul li:nth-child(4){
+        border-left: solid 5px;
+        border-left-color: #FF8932;
+        padding: 1em;
+    }
+    
+    nav ul li:nth-child(5){
+        border-left: solid 5px;
+        border-left-color: #19B6E9;
+        padding: 1em;
+    }
+    
+    nav ul li:nth-child(6){
+        border-left: solid 5px;
+        border-left-color: #E84C8B;
+        padding: 1em;
+    }
 
-    #hamburguer:checked + .hamburguer + ul li{
+    #hamburger:checked + .hamburger + ul li{
 
         max-height: 1em;
         padding: 1em;
         opacity: 1;
+        background-color: white;
 
     }
-    #hamburguer:checked+.hamburguer:before{
+    #hamburger:checked+.hamburger:before{
         content: "\2715";
     }
     footer{
