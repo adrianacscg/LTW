@@ -1,5 +1,5 @@
 # LTW
-Exercícios e projetos de Linguagens e Tecnologias Web (3ºano 1º semestre MIEIC)
+Exercícios de Linguagens e Tecnologias Web (3ºano 1º semestre MIEIC)
 
 Ficha da UC: https://web.fe.up.pt/~arestivo/page/courses/2019/ltw/
 
