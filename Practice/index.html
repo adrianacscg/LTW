@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+    <div id="main">
+    
+        <div id="start" >
+            <button name="start" id="start-button">Start</button>
+        </div>
+        
+        <section id="intro">
+            <h1 class="hidden">HELLO THERE!</h1>
+            <h3 class="hidden">Welcome to an interactive display of me trying to save my ass in the LTW final</h3>
+            <h2 class="hidden">This will be fun, so hang tight</h2>
+            <h1 class="hidden" id="next">NEXT</h1>
+            <h1 class="hidden" id="next2">NEXT?</h1>
+            <h1 class="hidden" id="next3">NEXT!</h1>
+        </section>
+        <section id="whoAreYou" class="hidden" >
+            <h1>First, who are you?</h1>
+            <form action="form.php" method="get">
+                <input type="text" name="name" placeholder="what's your name?" required>
+                <br>
+                <br>
+                <br>
+                <label for="profile-pic">Care to give me a profile picture?</label>
+                <br>
+                <input type="file" id="profile-pic" name="profile-pic">
+                <br>
+                <br>
+                <br>
+                <input id="submit" type="submit" value="SEND">
+            </form>
+            
+        </section>
+        
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+    <script src="snow.js"></script>
+</body>
+</html>
